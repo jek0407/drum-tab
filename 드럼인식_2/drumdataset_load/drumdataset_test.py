@@ -15,22 +15,13 @@ class DrumDataset_test(Dataset): #dtype = 'tmel', 'time', 'mel
         
         
         for path_mel_name in natsort.natsorted(glob.glob(os.path.join(path_mel,'*'))):
-            label = self.label_config(path_mel_name)
-
+            label = 'X'
+            # print(path_mel_name)
             img_mel = cv.imread(path_mel_name)
             img = np.transpose(img_mel,(2,0,1))
 
             self.test_data.append(img)
             self.test_label.append(label) 
-            
-    def label_config(self,path_name):
-        data_name = path_name.split('_')
-        label_n = data_name[-1][:-4]
-        if label_n == 'mel':
-            label = 'X'
-        else:
-            label = self.labels.index(label_n)
-        return label
         
     def __len__(self):
         return len(self.test_data)
