@@ -1,0 +1,95 @@
+{
+    "data_n": {
+        "data_ratio": [
+            4,
+            2,
+            4,
+            2,
+            1
+        ],
+        "t_v_ratio": [
+            10,
+            1
+        ],
+        "total_data_n": [
+            1320
+        ]
+    },
+    "data_type": [
+        "time",
+        "mel"
+    ],
+    "data_version": [
+        "dataset_v1",
+        "dataset_aug",
+        "dataset_v2",
+        "dataset_v3",
+        "dataset_v4"
+    ],
+    "hyperparameter": {
+        "efficientnet": [
+            1e-04,
+            0.95
+        ],
+        "resnet": [
+            1e-05,
+            0.95,
+            [
+                3,
+                4,
+                6,
+                3
+            ]
+        ],
+        "vgg": [
+            1e-05,
+            0.95
+        ]
+    },
+    "labels": [
+        "CH",
+        "B+CH",
+        "OH",
+        "S+CH",
+        "S+OH",
+        "B+OH",
+        "B",
+        "S",
+        "R",
+        "B+R",
+        "S+R",
+        "B+C",
+        "rest",
+        "MT",
+        "S+B+CH",
+        "FT",
+        "S+FT",
+        "S+B",
+        "S+C",
+        "S+B+R",
+        "B+FT",
+        "S+B+OH",
+        "MT+FT"
+    ],
+    "path": {
+        "mel_data": [
+            "./data/dataset_v1/images/mel/",
+            "./data/dataset_v2/images/mel/",
+            "./data/dataset_v3/images/mel/",
+            "./data/dataset_v4/images/mel/",
+            "./data/dataset_aug/images/mel/"
+        ],
+        "t_v_data": [
+            "dataset_train",
+            "dataset_valid",
+            "dataset_test"
+        ],
+        "time_data": [
+            "./data/dataset_v1/images/time/",
+            "./data/dataset_v2/images/time/",
+            "./data/dataset_v3/images/time/",
+            "./data/dataset_v4/images/time/",
+            "./data/dataset_aug/images/time/"
+        ]
+    }
+}
